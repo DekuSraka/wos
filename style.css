@@ -1,0 +1,137 @@
+/* Główne ustawienia */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+    scroll-behavior: smooth;
+}
+
+/* Baner górny */
+header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #dc3545 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Logo - prostokąt poziomy w nagłówku */
+.party-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+/* Nawigacja */
+nav {
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: #1e3c72;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #dc3545;
+}
+
+/* Kontenery i Karty */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #1e3c72;
+    border-left: 6px solid #dc3545;
+    padding-left: 15px;
+}
+
+/* Siatki (Grid) */
+.program-grid, .creators-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.program-item, .creator-profile {
+    flex: 1;
+    min-width: 250px;
+    max-width: 280px;
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+    border-top: 4px solid #1e3c72;
+    text-align: center;
+}
+
+.program-item:hover, .creator-profile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ZDJĘCIA TWÓRCÓW - PROSTOKĄT PIONOWY (PORTRET) */
+.creator-img {
+    width: 180px;         /* Szerokość mniejsza */
+    height: 240px;        /* Wysokość większa = PION */
+    object-fit: cover;    /* Kadrowanie twarzy bez rozciągania */
+    border-radius: 10px;
+    border: 3px solid #1e3c72;
+    margin-bottom: 15px;
+}
+
+.role {
+    color: #dc3545;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Stopka */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
